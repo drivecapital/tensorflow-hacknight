@@ -3,14 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>TensorFlow</title>
+		<link rel="stylesheet" href="app.css" />
 	</head>
 	<body>
 		<div id="app">
-			<canvas id="canvas"></canvas>
-			<canvas id="sample"></canvas>
-			<button id="clear">Clear</button>
-			<button id="export">Export</button>
+			<div id="draw">
+				<canvas id="canvas"></canvas>
+				<canvas id="sample"></canvas>
+			</div>
+			<div id="buttons">
+				<button id="clear">Clear</button>
+				<button id="export">Export</button>
+			</div>
+			<label for="output">Use this as input to the classifier:</label>
 			<textarea id="output"></textarea>
+			<p>Use your mouse to draw a single digit in the large square above. The smaller square shows the image scaled and translated for a neural network classifier. Press Clear to start over. Click Export to convert the scaled and translated sample into a [1x784] matrix. Copy the matrix from the textarea above and pass it to the trained classifier to test the network.</p>
 		</div>
 		<script src="app.js"></script>
 	</body>
