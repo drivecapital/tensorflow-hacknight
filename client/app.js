@@ -199,7 +199,6 @@
 
 	var $export = document.getElementById('export');
 	$export.addEventListener('click', function () {
-		preprocess($canvas, paths);
 		var image = Image.fromCanvas($sample);
 		$output.value = JSON.stringify([].slice.call(image.pixels));
 	});
