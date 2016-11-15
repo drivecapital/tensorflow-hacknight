@@ -142,7 +142,6 @@
 		var srcTop = srcRect[1];
 		var srcWidth = srcRect[2];
 		var srcHeight = srcRect[3];
-		var srcAspectRatio = srcWidth / srcHeight;
 
 		var destRect = getBoundingSquare([
 			(1 - BOX_WIDTH / SAMPLE_WIDTH) / 2,
@@ -154,7 +153,6 @@
 		var destTop = destRect[1];
 		var destWidth = destRect[2];
 		var destHeight = destRect[3];
-		var destAspectRatio = destWidth / destHeight;
 
 		var scale = destWidth / srcWidth;
 
